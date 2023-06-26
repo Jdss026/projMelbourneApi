@@ -1,14 +1,14 @@
 from flask import Flask, jsonify, request, make_response
-import pickle
-import pandas as pd
+# import pickle
+# import pandas as pd
 
 # cria o app flask
 app = Flask(__name__)
-app.config['JSON_SORT_KEYS'] = False
+# app.config['JSON_SORT_KEYS'] = False
 
-#importa modelo e scaler como objetos
-model = pickle.load(open('api/model/model.pkl', 'rb'))
-scaler = pickle.load(open('api/model/std_scalar.pkl','rb'))
+# #importa modelo e scaler como objetos
+# model = pickle.load(open('api/model/model.pkl', 'rb'))
+# scaler = pickle.load(open('api/model/std_scalar.pkl','rb'))
 
 #labels para colunas do df
 labels = ['Rooms',
